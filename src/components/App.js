@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Button } from 'wb-react-ui';
+
 import '../assets/stylesheets/base.scss';
 
 
 const App = ({ name }) => {
   return (
     <div>
-      <h1>Hello, {name}!</h1>
+      <Button>Hello, {name}!</Button>
     </div>
   );
 };
