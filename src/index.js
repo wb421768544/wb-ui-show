@@ -1,7 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import App from './App';
 import './index.css';
 
 
-render(<App name='World' />, document.getElementById('root'));
+render(
+  <React.Fragment>
+    <App />
+  </React.Fragment>,
+  document.getElementById('root')
+);
